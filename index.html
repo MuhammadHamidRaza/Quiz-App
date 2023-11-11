@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quiz App</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="loading">
+    <img width="200" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/afb8cb36197347.5713616457ee5.gif">
+  </div>
+  <button id="start-btn" class="hide" onclick="startQuiz()">Start</button>
+  <div id="question-container" class="hide">
+    <h3 id="title"></h3>
+    <div id="option">
+    </div>
+    <div id="count">30</div>
+    <button onclick="next()">Next</button>
+  </div>
+
+  <div id="result" class="hide">
+    <h3>Result</h3>
+    <p id="text"></p>
+    <button onclick="restart()">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
